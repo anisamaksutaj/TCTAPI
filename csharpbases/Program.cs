@@ -6,10 +6,4 @@
         {
             Console.WriteLine("Hello, World!");
         }
-
-        //test
-        int shuma(int x, int y)
-        {
-            return x + y;
-        }
 }
