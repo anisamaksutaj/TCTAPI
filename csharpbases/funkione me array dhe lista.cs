@@ -14,7 +14,7 @@ namespace csharpbases
             int max = 0;
             for( int i=0; i<array.Length;i++ )
             {
-                if (array[i]> max ) max = array[i];
+                if(array[i]> max ) max = array[i];
             }
 
             return max;
@@ -23,7 +23,7 @@ namespace csharpbases
         public int GjejShumenEArray(int[] array)
         {
             int sum = 0;
-            for(int=0; i<array.Length; int++)
+            for(int i= 0; i<array.Length; i++)
             {
                 sum = sum + array[i];
             }
