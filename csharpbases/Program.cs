@@ -25,6 +25,21 @@ internal class Program
         Console.WriteLine("Shuma :" + shuma);
         Console.WriteLine("Me i Madhi :" + meIMadhi);
         Console.WriteLine("Gjej Shumen nr Cift " + shumaCift);
+
+
+        List<int>ListeMeInteger= new List<int>() { 10, 32, 43, -3, 4, 413, -11, -41 };
+        List<string>ListeMeString= new List<string>() { "test", "abc"developer, ""}
+
+        FuksioneMeLista instancefuksioneMeLista= new FuksioneMeLista();
+
+        instancefuksioneMeLista.GjejMeTeMadhinNeListe(ListeMeInteger);
+        instancefuksioneMeLista.GjejShumenCiftNeListe(ListeMeInteger);
+        instancefuksioneMeLista.GjejShumenEListes(ListeMeInteger);
+        instancefuksioneMeLista.KtheElementetTek(ListeMeInteger);
+        instancefuksioneMeLista.GjejNumrinElementevePozitiv(ListeMeInteger);
+        instancefuksioneMeLista.KonvertToUpperCase(ListeMeString);
+
+        
     }
 }
 
