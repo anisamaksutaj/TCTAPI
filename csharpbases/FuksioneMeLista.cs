@@ -9,10 +9,21 @@ namespace csharpbases
 {
     internal class FuksioneMeLista
     {
+        /// <summary>
+        /// Pret nje liste me  Integer
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <returns>kthen numrin me te madh te listes </returns>
         public int GjejMeTeMadhinNeListe(List<int> lista) 
         {
             return lista.Max();
         }
+        
+        /// <summary>
+        /// Pret nje liste me Integer
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <returns>Pret shume e elementeve te listes </returns>
         public int GjejShumenEListes(List<int> lista)
         {
             return lista.Sum();
@@ -43,6 +54,11 @@ namespace csharpbases
 
         // ktheni nje liste me elementet tek qe jane ne nje liste 
 
+        /// <summary>
+        /// Merr nje liste me integer
+        /// </summary>
+        /// <param name="lista"></param>
+        /// <returns>Kthen vetem elementet tek </returns>
         public List<int> KtheElementetTek(List<int> lista)
         {
             return lista.Where(a => a % 2 == 1).ToList();
