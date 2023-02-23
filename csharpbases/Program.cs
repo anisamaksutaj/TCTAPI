@@ -72,4 +72,4 @@ Teacher t = new Teacher("Matematike", 25, "Anisa", "Maksutaj","Tirane",695452153
 Dog d =new Dog(true, 5, "Tobi", "hamham", "Ground");
 Cat c = new Cat("Nine", 2, "Piti", " Mjau", "Ground");
 
-
+FuksioneMeLista.ListOfMultiples(3, 24); 
