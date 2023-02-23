@@ -8,21 +8,18 @@ namespace csharpbases.Models
 {
     internal class Person
     {
-        /*   //private
-           private int agePrivate;
-           private string namePrivate;
-           private string surnamePrivate;
-           //protected
-           //--- internal ( per klasat qe mbahen brenda projektit )
-           //public
-           public string NamePublic;
-           public int AgePublic;
-           public string SurnamePublic;
+        public Person(int age, string name, string surname, string address, int phone)
+        {
+            Age = age;
+            Name = name;
+            Surname = surname;
+            Address = address;
+            Phone = phone;
+        }
+        public Person()
+        {
 
-           protected int AgeProtected;
-           protected string NameProtected;
-           protected string SurnameProtected;*/
-
+        }
 
         public int Age { get; set; }
         public string Name { get; set; }

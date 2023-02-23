@@ -3,8 +3,7 @@
 using csharpbases;
 using csharpbases.Helpers;
 using csharpbases.Models;
-using System.Collections.Generic;
-
+using System.Data.Common;
 
 funkione_me_array_dhe_lista instanca = new funkione_me_array_dhe_lista();
 
@@ -35,7 +34,6 @@ FuksioneMeLista instancefuksioneMeLista = new FuksioneMeLista();
 instancefuksioneMeLista.GjejMeTeMadhinNeListe(ListeMeInteger);
 instancefuksioneMeLista.GjejShumenCiftNeListe(ListeMeInteger);
 instancefuksioneMeLista.GjejShumenEListes(ListeMeInteger);
-
 instancefuksioneMeLista.GjejNumrinElementevePozitiv(ListeMeInteger);
 
 Console.WriteLine("Nr me i madh:" + instancefuksioneMeLista.GjejMeTeMadhinNeListe(ListeMeInteger));
@@ -54,37 +52,24 @@ foreach(string el in fjaletUppercase)
 {
     Console.WriteLine(el);
 }
-Person p= new Person();
-p.Name = "Anisa ";
-p.Age = 10;
-p.Surname = " Maksutaj";
-p.Address = "Tirana";
-p.Phone = 0695452153;
-
-int a=p.Age;
-Console.WriteLine(p.Age);
-Console.WriteLine(p.Name);
-Console.WriteLine(p.Surname);
-Console.WriteLine(p.Address);   
-Console.WriteLine(p.Phone);
-
-PersonalHelper helperMethods= new PersonalHelper();
-
-Person p1= new Person();
-p1.Age = 20;
-p1.Name = "John";
-p1.Surname = "Doeb";
-
-
-PersonalHelper helperMethods = new PersonalHelper();
 
 List<Person> ListOfPersons= new List<Person>();
-ListOfPersons.Add(p1);
-ListOfPersons.Add(p);
 
 
-helperMethods.KthePersoninMeMoshenMeTeMAdhe(ListOfPersons);
-double mosha = helperMethods.GjejMoshenMesatare(ListOfPersons);
-helperMethods.RenditPersonatSipasMoshes(ListOfPersons);
+
+
+PersonHelper.KthePersoninMeMoshenMeTeMAdhe(ListOfPersons);
+PersonHelper.GjejMoshenMesatare(ListOfPersons);
+PersonHelper .RenditPersonatSipasMoshes(ListOfPersons);
+
+
+
+Animal A=new Animal(5,"Cat", "Mjau","Ground");
+Animal B = new Animal();
+
+Teacher t = new Teacher("Matematike", 25, "Anisa", "Maksutaj","Tirane",695452153);
+
+Dog d =new Dog(true, 5, "Tobi", "hamham", "Ground");
+Cat c = new Cat("Nine", 2, "Piti", " Mjau", "Ground");
 
 

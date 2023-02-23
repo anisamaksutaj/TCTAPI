@@ -66,7 +66,7 @@ namespace csharpbases
 
         public List<string> KonvertToUpperCase(List<string> lista)
         { 
-             return lista.Select(a=> a.ToUpper()).ToList();
+             return lista.Select(a => a.ToUpper()).ToList();
         }
         public int KtheShumenEELementeveNegativ(List<int> lista)
         {
